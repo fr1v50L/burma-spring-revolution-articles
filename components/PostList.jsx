@@ -46,7 +46,7 @@ export default function PostList({ posts, pageName }) {
                     <p className="mb-2 truncate">{post.markdownBody}</p>
                     <Link href={{ pathname: `/${pageName}/${post.slug}` }}>
                       <a>
-                        <button className="bg-red-600 px-4 py-2 rounded-lg text-sm">
+                        <button className="px-4 py-2 rounded-lg text-sm border-red-600 border-2">
                           Read More
                         </button>
                       </a>
