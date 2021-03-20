@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Pyidaungsu";
+  src: url("/fonts/Pyidaungsu-2.5.3_Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EBGaramond";
+  src: url("/fonts/Pyidaungsu-2.5.3_Bold.ttf");
+  font-style: bold;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
