@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Burma Spring Revolution Articles - ဗမာ့နွေဦးတော်လှန်ရေးစာစဉ်
 
-## Getting Started
+This is an archive for articles posted on We Resist - Burma, Catch the Hell Hound and BBP - Resistance pages on Facebook. This site is created so that people can still read the articles when the posts on Facebook or the pages itself got reported and taken down, which has sadly become periodic. This site is made by a regular reader of the articles from the abovementioned pages.
 
-First, run the development server:
+## How to add articles
 
-```bash
-npm run dev
-# or
-yarn dev
+Articles are stored in Markdown files in `posts` folder in respective sub-folders for the three pages.
+
+Files are named with the date the post was published in `YYYY-MM-DD` format, followed by a three-word summary of article title (e.g - `word1-word2-word3`) all connected by hyphens.
+
+YAML metadata of the markdown files are stored as follows:
+
+```
+---
+title: [Article title]
+author: [Author name, if exists, or page name]
+date: [Month Day, Year] (e.g January 1, 2021)
+---
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If the above formats are satisfied, add the mardown file to respective folder and push the changes to this repository. The website is hosted on Netlify so once the changes are made, the site will be automatically built again and published.
